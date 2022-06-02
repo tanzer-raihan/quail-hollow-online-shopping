@@ -1,0 +1,3 @@
+Welcome to Quail Hollow, the online shopping store. This project has been made using HTML,CSS and Javascript. 
+Here you can add your desirable product to your cart and calculate total price of the products. Delivery charge and taxes will be added according to the amount you spend. When you click the Buy Now button ,you will notice a tab that ask your confirmation to precess the purchase request. If you confirm it then the order will be processed and cart section will be  vacant for further purchases.
+You can also see the details of certain product. Click the Details button and see the description and soo on. Please wait some period if needed in order to process the data.
