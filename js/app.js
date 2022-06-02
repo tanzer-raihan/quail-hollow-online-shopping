@@ -27,6 +27,8 @@ const showProducts = (products) => {
     document.getElementById("all-products").appendChild(div);
   }
 };
+
+//count product items that are selected for cart
 let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
@@ -36,6 +38,7 @@ const addToCart = (id, price) => {
   document.getElementById("total-Products").innerText = count;
 };
 
+//get value from webpage and turn text to number
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
   const converted = parseFloat(element);
@@ -73,6 +76,7 @@ const updateTaxAndCharge = () => {
     setInnerText("delivery-charge", 60);
     setInnerText("total-tax", priceConverted * 0.4);
   }
+  
   updateTotal();
 };
 
@@ -119,10 +123,13 @@ const displaySingleProduct = (product) => {
 
 
 }
+//Display toggle when processing data on Modal
 const toggleSpiner = displayStyle => {
   document.getElementById('spinner').style.display = displayStyle;
 
 }
+
+//action when press the buy now button
 const buyBtn = () => {
   const AddedproductText = document.getElementById('total-Products').innerText;
   const Addedproduct = parseInt(AddedproductText);
@@ -145,6 +152,7 @@ const buyBtn = () => {
   }
 
 }
+// converting  all cart section to zero after confirming buy now 
 const makeZero = (id) => {
   document.getElementById(id).innerText = 0;
 }
